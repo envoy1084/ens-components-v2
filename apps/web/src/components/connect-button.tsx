@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { ConnectButton as RainbowKitConnectButton } from "@rainbow-me/rainbowkit";
+import { ConnectButton as RainbowKitConnectButton } from "@rainbow-me/rainbowkit/components";
 import { Button, Dropdown, Label } from "@thenamespace/uikit";
 import {
   CheckIcon,

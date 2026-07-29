@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit/components";
 import { createEnsConfig, EnsProvider } from "@thenamespace/ens-components-v2";
 import { WagmiProvider } from "wagmi";
 

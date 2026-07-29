@@ -22,10 +22,11 @@ actions for integrating ENS v2 into React applications.
 Install the package and its Web3 peers:
 
 ```sh
-npm install @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem wagmi
+npm install @thenamespace/ens-components-v2 @tanstack/react-query@^5 viem@^2.55.0 wagmi@^2.19.5
 ```
 
-The package requires React and React DOM 19.2.7 or later, Viem 2, and Wagmi 3.
+The package requires React and React DOM 19.2.7 or later, TanStack Query 5,
+Viem 2.55 or later, and Wagmi 2.19.5 or later.
 Tailwind CSS is not required in the consuming application.
 
 ## Styles
@@ -36,8 +37,8 @@ Import the precompiled package stylesheet once at the application root:
 @import "@thenamespace/ens-components-v2/styles.css";
 ```
 
-The stylesheet imports the UI Kit stylesheet and includes every utility used by
-ENS Components. No Tailwind installation, configuration, or source scanning is
+The stylesheet contains the compiled UI Kit styles and every utility used by ENS
+Components. No Tailwind installation, configuration, or source scanning is
 required.
 
 ## Package exports

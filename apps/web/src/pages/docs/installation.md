@@ -10,19 +10,19 @@ Install ENS Components and its peer dependencies.
 :::code-group
 
 ```bash
-npm install @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem@^2.55.0 wagmi@^3.7.1
+npm install @thenamespace/ens-components-v2 @tanstack/react-query@^5 viem@^2.55.0 wagmi@^2.19.5
 ```
 
 ```bash [pnpm]
-pnpm add @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem@^2.55.0 wagmi@^3.7.1
+pnpm add @thenamespace/ens-components-v2 @tanstack/react-query@^5 viem@^2.55.0 wagmi@^2.19.5
 ```
 
 ```bash [yarn]
-yarn add @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem@^2.55.0 wagmi@^3.7.1
+yarn add @thenamespace/ens-components-v2 @tanstack/react-query@^5 viem@^2.55.0 wagmi@^2.19.5
 ```
 
 ```bash [bun]
-bun add @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem@^2.55.0 wagmi@^3.7.1
+bun add @thenamespace/ens-components-v2 @tanstack/react-query@^5 viem@^2.55.0 wagmi@^2.19.5
 ```
 
 :::
@@ -42,9 +42,9 @@ consumer application.
 | -------------------- | ----------------- |
 | React                | `>=19.2.7 <20`    |
 | React DOM            | `>=19.2.7 <20`    |
-| TanStack React Query | `5.101.2`         |
+| TanStack React Query | `>=5.0.0 <6`      |
 | Viem                 | `>=2.55.0 <3`     |
-| Wagmi                | `>=3.7.1 <4`      |
+| Wagmi                | `>=2.19.5 <3`     |
 
 ## Entry points
 

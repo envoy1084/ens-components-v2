@@ -15,20 +15,6 @@ export default defineReactConfig({
       to: "dist",
     },
   ],
-  deps: {
-    neverBundle: [
-      "@tanstack/react-query",
-      "@thenamespace/uikit",
-      "motion",
-      "neverthrow",
-      "react",
-      "react-dom",
-      "react/jsx-runtime",
-      "usehooks-ts",
-      "viem",
-      "wagmi",
-    ],
-  },
   dts: {
     enabled: true,
     sourcemap: true,
@@ -42,9 +28,7 @@ export default defineReactConfig({
   },
   fixedExtension: true,
   hash: false,
-  nodeProtocol: true,
   publint: false,
   shims: false,
   target: ["es2022"],
-  unbundle: true,
 });

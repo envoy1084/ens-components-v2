@@ -169,9 +169,6 @@ importers:
       react-hook-form:
         specifier: 7.83.0
         version: 7.83.0(react@19.2.8)
-      tailwindcss:
-        specifier: 'catalog:'
-        version: 4.3.3
       usehooks-ts:
         specifier: 3.1.1
         version: 3.1.1(react@19.2.8)
@@ -194,6 +191,9 @@ importers:
       react-dom:
         specifier: 'catalog:'
         version: 19.2.8(react@19.2.8)
+      tailwindcss:
+        specifier: 'catalog:'
+        version: 4.3.3
       tsdown:
         specifier: 'catalog:'
         version: 0.22.14(publint@0.3.22)(tsx@4.23.1)(typescript@6.0.3)

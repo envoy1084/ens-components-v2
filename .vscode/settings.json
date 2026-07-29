@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "solidity.formatter": "forge",
+  "editor.formatOnSave": true,
+  "files.watcherExclude": {
+    "**/.turbo/**": true,
+    "**/node_modules/**": true
+  },
+  "oxc.configPath": "oxlint.config.ts",
+  "oxc.fmt.configPath": "oxfmt.config.ts",
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "[css][graphql][html][json][jsonc][less][markdown][mdx][scss][toml][yaml][javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true
+  }
+}

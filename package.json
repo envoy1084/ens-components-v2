@@ -1,0 +1,37 @@
+{
+  "name": "@thenamespace/source",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
+    "changeset": "changeset",
+    "ci:publish": "turbo run build --filter=@thenamespace/ens-components-v2 && changeset publish",
+    "ci:version": "changeset version",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint --deny-warnings .",
+    "lint:fix": "oxlint --fix .",
+    "prepare": "lefthook install",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.2.1",
+    "@commitlint/config-conventional": "21.2.0",
+    "klarity": "0.2.0",
+    "lefthook": "2.1.10",
+    "oxfmt": "catalog:",
+    "oxlint": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.18.0",
+    "pnpm": ">=11 <12"
+  },
+  "packageManager": "pnpm@11.15.1"
+}

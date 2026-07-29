@@ -1,0 +1,32 @@
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - "@thenamespace/*"
+blockExoticSubdeps: true
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  "@parcel/watcher": false
+  bufferutil: false
+  keccak: false
+  lefthook: true
+  utf-8-validate: false
+engineStrict: true
+catalog:
+  "oxfmt": "0.61.0"
+  "oxlint": "1.76.0"
+  "react": "19.2.8"
+  "react-dom": "19.2.8"
+  "tailwindcss": "4.3.3"
+  "@tailwindcss/cli": "4.3.3"
+  "@tailwindcss/vite": "4.3.3"
+  "@tanstack/react-query": "5.101.4"
+  "@thenamespace/uikit": "0.2.1"
+  "viem": "2.55.10"
+  "wagmi": "2.19.5"
+  "@types/react": "19.2.17"
+  "@types/node": "26.1.1"
+  "@types/react-dom": "19.2.3"
+  "typescript": "7.0.2"
+  "tsdown": "0.22.14"
+  "turbo": "2.10.7"

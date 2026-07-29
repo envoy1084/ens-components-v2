@@ -55,6 +55,10 @@ catalogs:
       specifier: 2.19.5
       version: 2.19.5
 
+overrides:
+  '@heroui/react': 3.2.1
+  '@heroui/styles': 3.2.1
+
 importers:
 
   .:
@@ -745,15 +749,15 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  '@heroui/react@3.2.2':
-    resolution: {integrity: sha512-TN8ccfHCRIxa9dGhWMaVSl5sGCKWH2E13z2NJ5QBZTFQCow8GogQzW3cn/dRz3YEdYt4B9zfH2N0oKEazVoKRA==}
+  '@heroui/react@3.2.1':
+    resolution: {integrity: sha512-dEwOFHd2I199dm6nXynK96xeqeQZH2zcFlY8BaoqAjNNvVg24X4/dFua8GuayD2KS6FNX65/2BQhlxiV3ByFrQ==}
     peerDependencies:
       react: '>=19.0.0'
       react-dom: '>=19.0.0'
       tailwindcss: '>=4.0.0'
 
-  '@heroui/styles@3.2.2':
-    resolution: {integrity: sha512-aDvmcF1bEtWMTg6xbbfv62PFhm2ldIoYIt1uFKyTXEwWH1VWbr+er4LvZojtddTbqA9t58rbE5y32xM8ei9gHg==}
+  '@heroui/styles@3.2.1':
+    resolution: {integrity: sha512-6mrVlG338D9sDyOVGmFWqrLruc3lhmCClz3JVmMFKMkngHDR9CzvEsAcobx4injsAajCcHtrj9GwFOIoE0/oaQ==}
     peerDependencies:
       tailwindcss: '>=4.0.0'
 
@@ -1743,6 +1747,11 @@ packages:
       '@react-spectrum/provider': ^3.0.0
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
       react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
+  '@react-types/shared@3.35.0':
+    resolution: {integrity: sha512-iNWvuzEwANttpQpdlu8nPBtdHb0mcCMj1ZTH//iRB5E/14IAnyRlR25rxH7pNLyzHINsPGEKnWvpwDMCT6vziQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
   '@react-types/shared@3.36.0':
     resolution: {integrity: sha512-DkP/H0C2YjjS7gZWKNqOmU8a16qHPjQNdzMwmTq9SzplM6Iw0kVMTZ0OIoe6FOgGqa+FwMsE2QbPjh/n3g/jXQ==}
@@ -8363,20 +8372,20 @@ snapshots:
       '@tanstack/vue-virtual': 3.13.34(vue@3.5.40(typescript@6.0.3))
       vue: 3.5.40(typescript@6.0.3)
 
-  '@heroui/react@3.2.2(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)':
+  '@heroui/react@3.2.1(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)':
     dependencies:
-      '@heroui/styles': 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
+      '@heroui/styles': 3.2.1(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
       '@radix-ui/react-avatar': 1.1.11(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-aria/i18n': 3.13.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-aria/ssr': 3.10.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-aria/utils': 3.34.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-stately/utils': 3.12.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@react-types/color': 3.2.0(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      '@react-types/shared': 3.36.0(react@19.2.8)
+      '@react-types/shared': 3.35.0(react@19.2.8)
       input-otp: 1.4.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
-      react-aria: 3.50.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
-      react-aria-components: 1.19.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      react-aria: 3.49.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      react-aria-components: 1.18.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
       tailwind-merge: 3.4.0
       tailwind-variants: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
@@ -8386,7 +8395,7 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@heroui/styles@3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.3.3)':
+  '@heroui/styles@3.2.1(tailwind-merge@3.4.0)(tailwindcss@4.3.3)':
     dependencies:
       tailwind-variants: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
       tailwindcss: 4.3.3
@@ -8394,7 +8403,7 @@ snapshots:
     transitivePeerDependencies:
       - tailwind-merge
 
-  '@heroui/styles@3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.3.3)':
+  '@heroui/styles@3.2.1(tailwind-merge@3.5.0)(tailwindcss@4.3.3)':
     dependencies:
       tailwind-variants: 3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.3.3)
       tailwindcss: 4.3.3
@@ -9385,6 +9394,10 @@ snapshots:
       '@react-stately/color': 3.10.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
+
+  '@react-types/shared@3.35.0(react@19.2.8)':
+    dependencies:
+      react: 19.2.8
 
   '@react-types/shared@3.36.0(react@19.2.8)':
     dependencies:
@@ -10993,8 +11006,8 @@ snapshots:
 
   '@thenamespace/uikit@0.2.1(@floating-ui/dom@1.8.0)(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@tiptap/extensions@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react-is@17.0.2)(react@19.2.8)(redux@5.0.1)(supports-color@8.1.1)(tailwind-merge@3.4.0)(tailwindcss@4.3.3)':
     dependencies:
-      '@heroui/react': 3.2.2(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)
-      '@heroui/styles': 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
+      '@heroui/react': 3.2.1(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)
+      '@heroui/styles': 3.2.1(tailwind-merge@3.4.0)(tailwindcss@4.3.3)
       '@hugeicons/core-free-icons': 4.2.3
       '@hugeicons/react': 1.1.9(react@19.2.8)
       '@internationalized/date': 3.12.2
@@ -11040,8 +11053,8 @@ snapshots:
 
   '@thenamespace/uikit@0.2.1(@floating-ui/dom@1.8.0)(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@tiptap/extensions@3.29.2(@tiptap/core@3.29.2(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react-is@17.0.2)(react@19.2.8)(redux@5.0.1)(supports-color@8.1.1)(tailwind-merge@3.5.0)(tailwindcss@4.3.3)':
     dependencies:
-      '@heroui/react': 3.2.2(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)
-      '@heroui/styles': 3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.3.3)
+      '@heroui/react': 3.2.1(@react-spectrum/provider@3.11.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tailwindcss@4.3.3)
+      '@heroui/styles': 3.2.1(tailwind-merge@3.5.0)(tailwindcss@4.3.3)
       '@hugeicons/core-free-icons': 4.2.3
       '@hugeicons/react': 1.1.9(react@19.2.8)
       '@internationalized/date': 3.12.2

@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config/schema.json",
   "access": "public",
   "baseBranch": "main",
-  "changelog": ["@changesets/changelog-github", { "repo": "thenamespace/uikit" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "thenamespace/ens-components-v2" }],
   "commit": false,
   "fixed": [],
   "ignore": ["@thenamespace/web"],

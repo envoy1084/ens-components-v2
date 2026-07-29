@@ -22,7 +22,7 @@ actions for integrating ENS v2 into React applications.
 Install the package and its Web3 peers:
 
 ```sh
-npm install ens-components @tanstack/react-query@5.101.2 viem wagmi
+npm install @thenamespace/ens-components-v2 @tanstack/react-query@5.101.2 viem wagmi
 ```
 
 The package requires React and React DOM 19.2.7 or later, Viem 2, and Wagmi 3.
@@ -33,7 +33,7 @@ Tailwind CSS is not required in the consuming application.
 Import the precompiled package stylesheet once at the application root:
 
 ```css
-@import "ens-components/styles.css";
+@import "@thenamespace/ens-components-v2/styles.css";
 ```
 
 The stylesheet imports the UI Kit stylesheet and includes every utility used by
@@ -45,15 +45,15 @@ required.
 Import components, providers, data, and shared helpers from the package root:
 
 ```ts
-import { EnsProvider, NameRegistration } from "ens-components";
+import { EnsProvider, NameRegistration } from "@thenamespace/ens-components-v2";
 ```
 
 Use the dedicated entry points for actions, query hooks, and icons:
 
 ```ts
-import { prepareNameAvailabilityRead } from "ens-components/actions";
-import { useNameAvailability } from "ens-components/hooks";
-import { getAddressIcon } from "ens-components/icons";
+import { prepareNameAvailabilityRead } from "@thenamespace/ens-components-v2/actions";
+import { useNameAvailability } from "@thenamespace/ens-components-v2/hooks";
+import { getAddressIcon } from "@thenamespace/ens-components-v2/icons";
 ```
 
 Actions, hooks, and icons are not re-exported from the package root.
@@ -68,7 +68,7 @@ Hooks and components require Wagmi, TanStack Query, and `EnsProvider`:
 import type { ReactNode } from "react";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { EnsProvider } from "ens-components";
+import { EnsProvider } from "@thenamespace/ens-components-v2";
 import { createConfig, http, WagmiProvider } from "wagmi";
 import { sepolia } from "wagmi/chains";
 import { injected } from "wagmi/connectors";
@@ -99,7 +99,7 @@ Your application must also provide a wallet connection interface.
 Use the same built-in configuration with direct actions:
 
 ```ts
-import { getEnsNetworkConfiguration } from "ens-components";
+import { getEnsNetworkConfiguration } from "@thenamespace/ens-components-v2";
 
 const { chain, contracts } = getEnsNetworkConfiguration("testnet");
 ```
@@ -109,7 +109,7 @@ const { chain, contracts } = getEnsNetworkConfiguration("testnet");
 Render the complete registration flow as a dialog:
 
 ```tsx
-import { NameRegistration } from "ens-components";
+import { NameRegistration } from "@thenamespace/ens-components-v2";
 
 export function RegisterName() {
   return <NameRegistration />;
@@ -136,7 +136,7 @@ for customization, lifecycle events, defaults, and flow behavior.
 Render the renewal flow as a dialog:
 
 ```tsx
-import { NameRenewal } from "ens-components";
+import { NameRenewal } from "@thenamespace/ens-components-v2";
 
 export function RenewName() {
   return <NameRenewal defaultLabel="vitalik" />;
@@ -152,7 +152,7 @@ for duration controls, lifecycle events, slots, and messages.
 Render the permission-aware profile editor:
 
 ```tsx
-import { NameProfileEditor, emptyNameProfileFormValues } from "ens-components";
+import { NameProfileEditor, emptyNameProfileFormValues } from "@thenamespace/ens-components-v2";
 
 <NameProfileEditor initialRecords={emptyNameProfileFormValues} name="example.eth" />;
 ```

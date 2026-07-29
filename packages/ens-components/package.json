@@ -15,14 +15,14 @@
     "wagmi",
     "web3"
   ],
-  "homepage": "https://github.com/thenamespace/uikit/tree/main/packages/ens-components#readme",
+  "homepage": "https://github.com/thenamespace/ens-components-v2/tree/main/packages/ens-components#readme",
   "bugs": {
-    "url": "https://github.com/thenamespace/uikit/issues"
+    "url": "https://github.com/thenamespace/ens-components-v2/issues"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thenamespace/uikit.git",
+    "url": "git+https://github.com/thenamespace/ens-components-v2.git",
     "directory": "packages/ens-components"
   },
   "files": [

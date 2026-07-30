@@ -15,9 +15,6 @@ allowBuilds:
   utf-8-validate: false
   vue-demi: false
 engineStrict: true
-overrides:
-  "@heroui/react": "3.2.1"
-  "@heroui/styles": "3.2.1"
 catalog:
   "oxfmt": "0.61.0"
   "oxlint": "1.76.0"
@@ -27,7 +24,7 @@ catalog:
   "@tailwindcss/cli": "4.3.3"
   "@tailwindcss/vite": "4.3.3"
   "@tanstack/react-query": "5.101.4"
-  "@thenamespace/uikit": "0.2.1"
+  "@thenamespace/uikit": "0.3.0"
   "viem": "2.55.10"
   "wagmi": "2.19.5"
   "@types/react": "19.2.17"

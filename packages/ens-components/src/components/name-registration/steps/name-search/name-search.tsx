@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState, type ChangeEvent } from "react";
 import { Button, InputGroup, Spinner, Typography } from "@thenamespace/uikit";
 import { Icon, Search01Icon } from "@thenamespace/uikit/icons";
 
+import { REGISTER_ENS_HEADER_URL } from "#/asset-urls";
 import { useNameRegistration } from "#/components/name-registration/context";
 import {
   NameRegistrationBody,
@@ -16,11 +17,6 @@ import { RegistrationDetails } from "#/components/name-registration/steps/name-s
 import { useNameAvailability } from "#/hooks";
 import { formatError } from "#/lib";
 import { parseNameInput } from "#/lib/parse-name-input";
-
-const DefaultNameRegistrationGraphic = new URL(
-  "../../../../assets/register-ens-header.svg",
-  import.meta.url,
-);
 
 export interface NameSearchStepProps {
   onAvailabilityChange?: (isAvailable: boolean) => void;
@@ -73,11 +69,7 @@ export const NameSearchStep = ({ onAvailabilityChange, onNext }: NameSearchStepP
     <>
       <NameRegistrationHeader className="mx-auto">
         {slots.searchGraphic === undefined ? (
-          <img
-            alt=""
-            className="mx-auto w-full max-w-64"
-            src={DefaultNameRegistrationGraphic.href}
-          />
+          <img alt="" className="mx-auto w-full max-w-64" src={REGISTER_ENS_HEADER_URL} />
         ) : (
           slots.searchGraphic
         )}

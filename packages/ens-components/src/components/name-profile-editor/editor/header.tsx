@@ -5,14 +5,7 @@ import { useCallback, type ReactNode, type SyntheticEvent } from "react";
 import { Button, Spinner, Surface } from "@thenamespace/uikit";
 import { Add01Icon, HugeiconsIcon, PencilEdit01Icon } from "@thenamespace/uikit/icons";
 
-export const DEFAULT_PROFILE_HEADER_URL = new URL(
-  "../../../assets/default-profile-header.webp",
-  import.meta.url,
-).href;
-export const DEFAULT_PROFILE_AVATAR_URL = new URL(
-  "../../../assets/default-profile-avatar.webp",
-  import.meta.url,
-).href;
+import { DEFAULT_PROFILE_AVATAR_URL, DEFAULT_PROFILE_HEADER_URL } from "#/asset-urls";
 
 function MediaActionIcon({ hasValue, isUploading }: { hasValue: boolean; isUploading: boolean }) {
   if (isUploading) return <Spinner className="size-4" size="sm" />;

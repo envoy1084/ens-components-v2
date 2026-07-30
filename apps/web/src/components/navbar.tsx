@@ -1,5 +1,4 @@
-import { Button, Dropdown, Label, Navbar } from "@thenamespace/uikit";
-import { ArrowDown01Icon, HugeiconsIcon } from "@thenamespace/uikit/icons";
+import { Navbar } from "@thenamespace/uikit";
 
 import { ConnectButton } from "./connect-button";
 import { NamespaceLogo } from "./icons/namespace";
@@ -10,13 +9,6 @@ const componentLinks = [
   { id: "name-profile-editor", label: "Profile records" },
   { id: "transaction-progress", label: "Transaction progress" },
 ] as const;
-
-function scrollToComponent(key: React.Key) {
-  document.getElementById(String(key))?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-}
 
 export function AppNavbar() {
   return (
@@ -36,21 +28,11 @@ export function AppNavbar() {
         </Navbar.Brand>
         <Navbar.Spacer />
         <Navbar.Content className="mr-2 hidden lg:!flex">
-          <Dropdown>
-            <Button size="sm" variant="tertiary">
-              Components
-              <HugeiconsIcon aria-hidden icon={ArrowDown01Icon} size={14} />
-            </Button>
-            <Dropdown.Popover className="min-w-56" placement="bottom end">
-              <Dropdown.Menu onAction={scrollToComponent}>
-                {componentLinks.map((component) => (
-                  <Dropdown.Item id={component.id} key={component.id} textValue={component.label}>
-                    <Label>{component.label}</Label>
-                  </Dropdown.Item>
-                ))}
-              </Dropdown.Menu>
-            </Dropdown.Popover>
-          </Dropdown>
+          {componentLinks.map((component) => (
+            <Navbar.Item href={`/#${component.id}`} key={component.id}>
+              {component.label}
+            </Navbar.Item>
+          ))}
           <Navbar.Item href="/docs">Docs</Navbar.Item>
         </Navbar.Content>
         <ConnectButton />

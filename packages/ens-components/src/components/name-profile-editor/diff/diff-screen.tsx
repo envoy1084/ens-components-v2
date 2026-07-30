@@ -6,6 +6,7 @@ import { Accordion, Button, Surface, Typography } from "@thenamespace/uikit";
 import { ArrowLeft01Icon, HugeiconsIcon } from "@thenamespace/uikit/icons";
 import type { Hex } from "viem";
 
+import { REGISTER_ENS_HEADER_URL } from "#/asset-urls";
 import type {
   NameProfileEditorMessages,
   NameProfileEditorPresentation,
@@ -23,8 +24,6 @@ import type { NameProfileRecordChange } from "#/components/name-profile-editor/t
 import { TransactionProgress } from "#/components/transaction-progress";
 import { formatError } from "#/lib";
 import { useEnsConfig } from "#/providers";
-
-const ReviewGraphic = new URL("../../../assets/register-ens-header.svg", import.meta.url);
 
 export function ProfileDiffScreen({
   buttonLabel,
@@ -97,7 +96,7 @@ export function ProfileDiffScreen({
           <img
             alt=""
             className="mx-auto w-full max-w-56 min-[420px]:max-w-64"
-            src={ReviewGraphic.href}
+            src={REGISTER_ENS_HEADER_URL}
           />
         ) : (
           slots.reviewGraphic

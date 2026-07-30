@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 import { Typography } from "@thenamespace/uikit";
 
-const DefaultSuccessGraphic = new URL("../assets/register-ens-success.svg", import.meta.url);
+import { REGISTER_ENS_SUCCESS_URL } from "#/asset-urls";
 
 export interface FlowSuccessHeaderProps {
   description?: ReactNode;
@@ -14,9 +14,7 @@ export interface FlowSuccessHeaderProps {
 export function FlowSuccessHeader({ description, graphic, name, title }: FlowSuccessHeaderProps) {
   return (
     <>
-      {graphic ?? (
-        <img alt="" className="h-auto w-full max-w-48" src={DefaultSuccessGraphic.href} />
-      )}
+      {graphic ?? <img alt="" className="h-auto w-full max-w-48" src={REGISTER_ENS_SUCCESS_URL} />}
       <Typography.Paragraph className="mt-5" color="muted" size="sm">
         {title}
       </Typography.Paragraph>

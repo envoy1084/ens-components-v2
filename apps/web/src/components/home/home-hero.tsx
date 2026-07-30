@@ -3,8 +3,6 @@
 import { Button, Typography } from "@thenamespace/uikit";
 import { ArrowRight01Icon, HugeiconsIcon } from "@thenamespace/uikit/icons";
 
-import { InstallCommand } from "./install-command";
-
 function openDocs() {
   window.location.assign("/docs");
 }
@@ -25,10 +23,9 @@ export function HomeHero() {
           </Typography.Paragraph>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <InstallCommand />
             <Button onPress={openDocs} size="lg" variant="primary">
               Docs
-              <HugeiconsIcon aria-hidden icon={ArrowRight01Icon} size={17} />
+              <HugeiconsIcon aria-hidden icon={ArrowRight01Icon} size={16} />
             </Button>
           </div>
         </div>

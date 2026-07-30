@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Accordion, Button, Surface } from "@thenamespace/uikit";
 import { ArrowLeft01Icon, HugeiconsIcon } from "@thenamespace/uikit/icons";
 
+import { REGISTER_ENS_HEADER_URL } from "#/asset-urls";
 import { useNameRegistration } from "#/components/name-registration/context";
 import {
   NameRegistrationBody,
@@ -17,11 +18,6 @@ import {
   TimerStep,
 } from "#/components/name-registration/steps/registration-process/steps";
 import type { RegistrationSuccessDetails } from "#/components/name-registration/steps/registration-success";
-
-const DefaultNameRegistrationGraphic = new URL(
-  "../../../../assets/register-ens-header.svg",
-  import.meta.url,
-);
 
 export type RegistrationProcessStep = "commitment" | "complete-registration" | "timer";
 
@@ -83,11 +79,7 @@ export function RegistrationProcess({
       </Button>
       <NameRegistrationHeader className="mx-auto">
         {slots.processGraphic === undefined ? (
-          <img
-            alt=""
-            className="mx-auto w-full max-w-64"
-            src={DefaultNameRegistrationGraphic.href}
-          />
+          <img alt="" className="mx-auto w-full max-w-64" src={REGISTER_ENS_HEADER_URL} />
         ) : (
           slots.processGraphic
         )}

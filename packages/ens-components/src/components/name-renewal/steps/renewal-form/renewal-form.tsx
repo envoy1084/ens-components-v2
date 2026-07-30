@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState, type ChangeEvent } from "react";
 import { Button, InputGroup, Spinner, Typography } from "@thenamespace/uikit";
 import { Icon, Search01Icon } from "@thenamespace/uikit/icons";
 
+import { REGISTER_ENS_HEADER_URL } from "#/asset-urls";
 import { useNameRenewal } from "#/components/name-renewal/context";
 import {
   NameRenewalBody,
@@ -20,11 +21,6 @@ import { useNameRenewalPrice } from "#/hooks";
 import { formatError } from "#/lib";
 import { parseNameInput } from "#/lib/parse-name-input";
 import { useEnsConfig } from "#/providers";
-
-const DefaultNameRenewalGraphic = new URL(
-  "../../../../assets/register-ens-header.svg",
-  import.meta.url,
-);
 
 export interface NameRenewalFormProps {
   onPendingChange?: (isPending: boolean) => void;
@@ -86,7 +82,7 @@ export function NameRenewalForm({ onPendingChange, onSuccess }: NameRenewalFormP
     <>
       <NameRenewalHeader className="mx-auto">
         {slots.formGraphic === undefined ? (
-          <img alt="" className="mx-auto w-full max-w-64" src={DefaultNameRenewalGraphic.href} />
+          <img alt="" className="mx-auto w-full max-w-64" src={REGISTER_ENS_HEADER_URL} />
         ) : (
           slots.formGraphic
         )}
